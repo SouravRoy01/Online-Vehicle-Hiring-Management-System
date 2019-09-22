@@ -1,0 +1,157 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminStartup.master.cs" Inherits="AdminStartup" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .style1
+        {
+            width: 100%;
+            height :700px;
+        }
+        .style2
+        {
+            height: 16px;
+        }
+        .style9
+        {
+            height: 16px;
+            font-family: "Berlin Sans FB";
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            width: 285px;
+        }
+        .style7
+        {
+            height: 16px;
+            font-family: "Berlin Sans FB";
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            width: 296px;
+        }
+        .style4
+        {
+            height: 16px;
+            font-family: "Berlin Sans FB";
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            width: 277px;
+        }
+        .style8
+        {
+            height: 16px;
+            font-family: "Berlin Sans FB";
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            width: 267px;
+        }
+        .style3
+        {
+            height: 16px;
+            font-family: "Berlin Sans FB";
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+        }
+        .style10
+        {
+            color: #000000;
+        }
+        </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="style1" 
+            style="border: 8px double #000000" width="100%">
+            <tr>
+                <td class="style2" colspan="5">
+                    <h1 style="font-family: 'Berlin Sans FB'; font-size: xx-large">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Image ID="Image1" runat="server" Height="360px" Width="846px" 
+                            BorderStyle="Solid" ImageUrl="~/image/123.png" />
+&nbsp; BLUR CARS</h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" colspan="5">
+                    <hr size="5" style="background-color: #0066FF; color: #0066FF" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" style="border-style: solid; border-color: #000000">
+                    <asp:HyperLink ID="hlCars" runat="server" style="text-align: center" 
+                        CssClass="style10" NavigateUrl="~/AdminCars.aspx">CARS</asp:HyperLink>
+                </td>
+                <td class="style7" style="border-style: solid; border-color: #000000">
+                    <asp:HyperLink ID="hlBookings" runat="server" style="text-align: center" 
+                        CssClass="style10" NavigateUrl="~/Bookings.aspx">BOOKINGS</asp:HyperLink>
+                </td>
+                <td class="style4" style="border-style: solid; border-color: #000000">
+                    <asp:HyperLink ID="hlUserRecords" runat="server" style="text-align: center" 
+                        CssClass="style10" NavigateUrl="~/UserRecords.aspx">USER RECORDS</asp:HyperLink>
+                </td>
+                <td class="style8" style="border-style: solid; border-color: #000000">
+                    <asp:HyperLink ID="hlFeedbackAdmin" runat="server" style="text-align: center" 
+                        CssClass="style10" NavigateUrl="~/Feedback.aspx">FEEDBACK</asp:HyperLink>
+                </td>
+                <td class="style3" style="border-style: solid; border-color: #000000">
+                    <asp:HyperLink ID="hlLoginAdmin" runat="server" style="text-align: center" 
+                        CssClass="style10" NavigateUrl="~/LogoutAdmin.aspx">LOGOUT</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <hr size="5" style="background-color: #0066FF; color: #0066FF" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: right">
+                    <asp:Label ID="lblWelcomeGuest" runat="server" 
+                        style="font-weight: 700; font-size: x-large; font-family: 'Copperplate Gothic Bold'; color: #FF0066" 
+                        Text="WELCOME ADMIN"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <hr size="5" style="background-color: #0066FF; color: #0066FF" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <hr size="5" style="background-color: #0066FF; color: #0066FF" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="font-family: 'Berlin Sans FB'; font-weight: 700">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hlTermsAndConditions" runat="server" 
+                        style="text-align: center; font-weight: 700; font-size: small" 
+                        CssClass="style10" NavigateUrl="~/TermsAndConditions.aspx">TERMS &amp; CONDITIONS</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hlPrivacyPolicy" runat="server" 
+                        style="text-align: center; font-weight: 700; font-size: small" 
+                        CssClass="style10" NavigateUrl="~/PrivacyPolicy.aspx">PRIVACY POLICY</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    Developed By VAS &amp; Co.</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
